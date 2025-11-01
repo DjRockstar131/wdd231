@@ -29,10 +29,10 @@ if (lastModEl) {
 */
 const courses = [
   { code: "WDD 130", title: "Web Fundamentals",        credits: 2, category: "WDD", completed: true  },
-  { code: "WDD 131", title: "Dynamic Web Fundamentals", credits: 2, category: "WDD", completed: false },
+  { code: "WDD 131", title: "Dynamic Web Fundamentals", credits: 2, category: "WDD", completed: true },
   { code: "WDD 231", title: "Frontend Dev I",          credits: 3, category: "WDD", completed: false },
   { code: "CSE 110", title: "Intro to Programming",    credits: 2, category: "CSE", completed: true  },
-  { code: "CSE 111", title: "Programming w/ Functions",credits: 2, category: "CSE", completed: false },
+  { code: "CSE 111", title: "Programming w/ Functions",credits: 2, category: "CSE", completed: true },
   { code: "CSE 210", title: "Programming w/ Classes",  credits: 3, category: "CSE", completed: false }
 ];
 
