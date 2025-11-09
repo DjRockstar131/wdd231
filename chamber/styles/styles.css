@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5 {
   border: 1px solid rgba(255,255,255,.16);
   background: #0a1224;
   cursor: pointer;
-  transition: background .2s, border-color .2s, transform .04s ease;
+  transition: .2s, border-color .2s, transform .04s ease;
   font-family: "Forum", serif;
 }
 
