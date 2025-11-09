@@ -110,7 +110,7 @@ nav ul {
 nav a {
   padding: .45rem .75rem;
   border-radius: 10px;
-  transition: background .2s, outline-color .2s;
+  transition:  .2s, outline-color .2s;
 }
 
 nav a:hover,
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5 {
   border: 1px solid rgba(255,255,255,.16);
   background: linear-gradient(180deg, rgba(34,211,238,.2), rgba(34,211,238,.08));
   box-shadow: 0 2px 0 rgba(0,0,0,.2);
-  transition: background .2s, border-color .2s, transform .06s ease;
+  transition: .2s, border-color .2s, transform .06s ease;
 }
 
 .btn:hover { border-color: rgba(56,189,248,.45); transform: translateY(-1px); }
