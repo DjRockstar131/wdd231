@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmington Chamber — Join</title>
+  <meta name="description" content="Join the Farmington Chamber: benefits and application." />
+  <meta name="author" content="Davin Quist" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Join the Farmington Chamber" />
+  <meta property="og:description" content="Choose a membership level and enjoy trainings, luncheons, and more." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://your-domain.example/chamber/join.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/join.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1 class="page-title">Join the Chamber</h1>
+
+    <section class="grid-3 perks">
+      <article class="panel">
+        <h2>Non-Profit</h2>
+        <ul class="bullets">
+          <li>Directory listing</li>
+          <li>Newsletter publications</li>
+          <li>Training access (limited)</li>
+          <li>Social media shares (1/mo)</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <h2>Silver</h2>
+        <ul class="bullets">
+          <li>Priority directory placement</li>
+          <li>Publications & trainings</li>
+          <li>Quarterly luncheons</li>
+          <li>Event sponsorship opportunities</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <h2>Gold</h2>
+        <ul class="bullets">
+          <li>Top directory placement & spotlight eligibility</li>
+          <li>Full publications, trainings, & luncheons</li>
+          <li>Annual sponsorship packages</li>
+          <li>Advertising credits</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Application</h2>
+      <form id="join-form" novalidate>
+        <div class="form-grid">
+          <label>
+            Business/Organization Name
+            <input name="org" type="text" required />
+          </label>
+
+          <label>
+            Contact Name
+            <input name="contact" type="text" required />
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" required />
+          </label>
+
+          <label>
+            Phone
+            <input name="phone" type="tel" required />
+          </label>
+
+          <label>
+            Website
+            <input name="website" type="url" placeholder="https://…" />
+          </label>
+
+          <label>
+            Address
+            <input name="address" type="text" required />
+          </label>
+
+          <fieldset class="full">
+            <legend>Membership Level</legend>
+            <label><input type="radio" name="level" value="nonprofit" required /> Non-Profit</label>
+            <label><input type="radio" name="level" value="silver" /> Silver</label>
+            <label><input type="radio" name="level" value="gold" /> Gold</label>
+          </fieldset>
+
+          <label class="full">
+            Notes (optional)
+            <textarea name="notes" rows="4" placeholder="Tell us about your goals…"></textarea>
+          </label>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn" type="submit">Submit Application</button>
+          <p class="muted" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

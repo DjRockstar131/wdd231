@@ -1,0 +1,95 @@
+:root{
+  --bg: #0f172a;          /* slate-900 */
+  --panel: #111827;       /* gray-900 */
+  --card: #0b1224;        /* deep slate */
+  --text: #e5e7eb;        /* gray-200 */
+  --muted: #94a3b8;       /* slate-400 */
+  --brand: #22d3ee;       /* cyan-400 */
+  --brand-2: #f59e0b;     /* amber-500 */
+  --ring: #38bdf8;
+
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif; }
+
+.container { width: min(1100px, 92%); margin: 0 auto; padding: 1.5rem 0 3rem; }
+
+header, footer {
+  background: linear-gradient(180deg, #0b1020, #0a1022);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  box-shadow: var(--shadow);
+}
+
+.header-inner, .footer-inner {
+  width: min(1100px, 92%); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1rem 0;
+}
+
+.brand { display: inline-flex; align-items: center; gap: .6rem; }
+.brand img { width: 38px; height: 38px; }
+.brand span { font-weight: 700; letter-spacing: .4px; }
+
+.nav-toggle { display: none; }
+nav ul { display: flex; gap: 1rem; }
+nav a { padding: .5rem .8rem; border-radius: 10px; transition: background .2s; }
+nav a:hover, nav a[aria-current="page"] { background: rgba(34,211,238,.12); outline: 1px solid rgba(56,189,248,.25); }
+
+@media (max-width: 720px){
+  .nav-toggle { display: inline-flex; border: 1px solid rgba(255,255,255,.12); background: transparent; color: var(--text); padding: .5rem .75rem; border-radius: 12px; }
+  nav { display: none; }
+  nav.open { display: block; }
+  nav ul { flex-direction: column; gap: .25rem; padding: .75rem 0; }
+}
+
+/* Page title + controls */
+.page-title { font-size: clamp(1.5rem, 2.5vw, 2rem); margin: 1rem 0 1rem; font-weight: 700; }
+.view-controls { display: flex; gap: .5rem; margin-bottom: 1rem; }
+.toggle {
+  padding: .55rem .9rem; border-radius: 12px; border: 1px solid rgba(255,255,255,.16);
+  background: #0a1224; color: var(--text); cursor: pointer; transition: transform .04s ease, background .2s, border-color .2s;
+}
+.toggle:hover { border-color: rgba(56,189,248,.45); }
+.toggle.active { background: linear-gradient(180deg, rgba(34,211,238,.2), rgba(34,211,238,.08)); border-color: rgba(56,189,248,.6); }
+
+/* Directory grid/list */
+.cards { display: grid; gap: 1rem; }
+.cards.grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.cards.list { grid-template-columns: 1fr; }
+
+.card {
+  background: radial-gradient(100% 100% at 50% 0%, rgba(34,211,238,.15) 0%, rgba(34,211,238,0) 60%), var(--card);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  display: grid; grid-template-columns: 64px 1fr; gap: .85rem; align-items: center;
+}
+
+.card img.logo { width: 64px; height: 64px; object-fit: contain; border-radius: 12px; background: rgba(255,255,255,.04); padding: .35rem; }
+
+.card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: .25rem; }
+.meta { color: var(--muted); font-size: .95rem; line-height: 1.35; }
+.meta a { text-decoration: underline; text-decoration-color: rgba(34,211,238,.55); }
+.badge {
+  display: inline-block; margin-top: .45rem; padding: .25rem .5rem; border-radius: 999px; font-size: .75rem; font-weight: 600;
+  border: 1px solid rgba(255,255,255,.14);
+}
+.badge.gold  { background: rgba(245,158,11,.18); color: #fde68a; border-color: rgba(245,158,11,.35); }
+.badge.silver{ background: rgba(148,163,184,.18); color: #e2e8f0; border-color: rgba(148,163,184,.35); }
+.badge.member{ background: rgba(34,211,238,.18); color: #a5f3fc; border-color: rgba(34,211,238,.35); }
+
+.cards.list .card { grid-template-columns: 64px 1fr; }
+.cards.list .meta { display: grid; grid-template-columns: 1fr 1fr; gap: .35rem 1rem; }
+@media (max-width: 520px){
+  .cards.list .meta { grid-template-columns: 1fr; }
+}
+
+/* Footer */
+.footer-inner { flex-wrap: wrap; gap: .75rem; }
+.footer-col { color: var(--muted); font-size: .95rem; }
+.footer-col strong { color: var(--text); }
+.footer-col a { text-decoration: underline; text-decoration-color: rgba(34,211,238,.55); }

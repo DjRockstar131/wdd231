@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="48" fill="#0ea5e9"></rect>
+  <g fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="260" r="92"></circle>
+    <path d="M256 140v-40M140 256h-40M412 256h-40M256 412v-40"></path>
+    <path d="M196 260h120M256 200v120"></path>
+  </g>
+  <text x="256" y="440" fill="#04293A" font-size="80" font-weight="800" text-anchor="middle" font-family="Inter, system-ui">DT</text>
+</svg>

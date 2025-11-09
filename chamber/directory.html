@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Farmington Chamber of Commerce — Member Directory</title>
+  <meta name="description" content="Browse the Farmington Chamber of Commerce member directory. Filter and switch between grid and list views." />
+  <meta name="author" content="Davin Quist" />
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="images/og-image.jpg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Farmington Chamber — Member Directory" />
+  <meta property="og:description" content="Discover local businesses in the Farmington Chamber of Commerce." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://your-domain.example/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/directory.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1 class="page-title">Member Directory</h1>
+
+    <div class="view-controls" role="group" aria-label="View toggles">
+      <button id="gridBtn" class="toggle active" aria-pressed="true">Grid</button>
+      <button id="listBtn" class="toggle" aria-pressed="false">List</button>
+    </div>
+
+    <section id="directory" class="cards grid" aria-live="polite"></section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

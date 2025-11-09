@@ -1,0 +1,18 @@
+{
+  "snapshot": [
+    "Population: ~26,000",
+    "Median household income: $115k",
+    "Key sectors: Retail, Tourism, Technology, and Education"
+  ],
+  "demographics": [
+    "Median age: 33.2",
+    "Households with children: 47%",
+    "College-educated: 70%",
+    "Commute under 20 mins: 52%"
+  ],
+  "events": [
+    {"title": "Farmington Festival Days", "date": "Jul 13", "location": "Main Street Park"},
+    {"title": "Legacy Parkway Fun Run", "date": "Aug 10", "location": "Legacy Events Center"},
+    {"title": "Holiday Lights Parade", "date": "Dec 7", "location": "Downtown Farmington"}
+  ]
+}

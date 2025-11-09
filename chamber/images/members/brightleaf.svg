@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="48" fill="#f59e0b"></rect>
+  <g fill="#fff">
+    <circle cx="256" cy="220" r="70"></circle>
+    <path d="M256 60v60M256 380v60M60 256h60M392 256h60M114 114l42 42M356 356l42 42M114 398l42-42M356 156l42-42" stroke="#fff" stroke-width="18" stroke-linecap="round"></path>
+  </g>
+  <text x="256" y="440" fill="#1f2937" font-size="82" font-weight="800" text-anchor="middle" font-family="Inter, system-ui">BL</text>
+</svg>

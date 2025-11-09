@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmington Chamber — Welcome</title>
+  <meta name="description" content="Connect with local businesses, events, and resources in Farmington." />
+  <meta name="author" content="Davin Quist" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Farmington Chamber — Welcome" />
+  <meta property="og:description" content="Your hub for community, commerce, and growth in Farmington." />
+  <meta property="og:image" content="images/og-image2.jpg" />
+  <meta property="og:url" content="https://your-domain.example/chamber/index.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/home.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Build. Belong. <span class="accent">Farmington</span>.</h1>
+        <p>We connect businesses, spark community, and grow opportunity in Farmington.</p>
+        <div class="cta-row">
+          <a class="btn" href="join.html">Join the Chamber</a>
+          <a class="btn secondary" href="directory.html">Find a Business</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-grid">
+      <article class="panel">
+        <h2>Community Snapshot</h2>
+        <ul class="bullets" id="community-snapshot"></ul>
+      </article>
+
+      <article class="panel">
+        <h2>Weather</h2>
+        <div id="weather">
+          <p><em>72°F · Clear skies</em></p>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Calls to Action</h2>
+        <ul class="bullets">
+          <li><a href="join.html">Become a Member</a> — trainings & luncheons.</li>
+          <li><a href="discover.html">Explore Events</a> — see what’s happening.</li>
+          <li><a href="directory.html">Support Local</a> — browse our directory.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="spotlights">
+      <h2>Business Spotlights</h2>
+      <div id="spotlight-cards" class="cards grid"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

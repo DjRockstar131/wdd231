@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Acme Outfitters",
+    "address": "101 North Main St, Farmington, UT 84025",
+    "phone": "+1 (801) 555-0101",
+    "website": "https://acme-outfitters.example",
+    "logo": "images/members/acme.svg",
+    "membershipLevel": 3,
+    "notes": "Outdoor gear, camping supplies, and guided Wasatch hiking tours."
+  },
+  {
+    "name": "BrightLeaf Solar",
+    "address": "45 Park Lane, Farmington, UT 84025",
+    "phone": "+1 (801) 555-0102",
+    "website": "https://brightleaf-solar.example",
+    "logo": "images/members/brightleaf.svg",
+    "membershipLevel": 2,
+    "notes": "Residential and commercial solar panel installations across Davis County."
+  },
+  {
+    "name": "Canyon Coffee Roasters",
+    "address": "230 S Main St, Farmington, UT 84025",
+    "phone": "+1 (801) 555-0103",
+    "website": "https://canyoncoffee.example",
+    "logo": "images/members/canyon.svg",
+    "membershipLevel": 1,
+    "notes": "Locally roasted coffee with pastries sourced from Utah farmers."
+  },
+  {
+    "name": "DawnTech IT Services",
+    "address": "875 W Shepard Ln, Suite 200, Farmington, UT 84025",
+    "phone": "+1 (801) 555-0104",
+    "website": "https://dawntech.example",
+    "logo": "images/members/dawntech.svg",
+    "membershipLevel": 3,
+    "notes": "Managed IT services, network setup, and cybersecurity for small businesses."
+  },
+  {
+    "name": "EverClean Laundry",
+    "address": "315 W 200 S, Farmington, UT 84025",
+    "phone": "+1 (801) 555-0105",
+    "website": "https://everclean.example",
+    "logo": "images/members/everclean.svg",
+    "membershipLevel": 1,
+    "notes": "Full-service laundromat with pickup and delivery options throughout Farmington."
+  },
+  {
+    "name": "NorthStar Accounting",
+    "address": "65 E 100 N, Farmington, UT 84025",
+    "phone": "+1 (801) 555-0106",
+    "website": "https://northstaracct.example",
+    "logo": "images/members/northstar.svg",
+    "membershipLevel": 2,
+    "notes": "Tax preparation, bookkeeping, and payroll management for Utah entrepreneurs."
+  },
+  {
+    "name": "TruPrint Design & Press",
+    "address": "480 Lagoon Dr, Farmington, UT 84025",
+    "phone": "+1 (801) 555-0107",
+    "website": "https://truprint.example",
+    "logo": "images/members/truprint.svg",
+    "membershipLevel": 1,
+    "notes": "Graphic design, branding, and large-format printing for local events and businesses."
+  }
+]

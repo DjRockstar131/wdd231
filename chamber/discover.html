@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmington Chamber — Discover</title>
+  <meta name="description" content="Discover Farmington: history, demographics, events, and sights." />
+  <meta name="author" content="Davin Quist" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Discover Farmington" />
+  <meta property="og:description" content="Get to know Farmington: people, places, and stories." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://your-domain.example/chamber/discover.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/discover.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1 class="page-title">Discover Farmington</h1>
+
+    <section class="panel">
+      <h2>Locale History</h2>
+        <p id="history">
+        Nestled between the Wasatch Mountains and the Great Salt Lake, Farmington, Utah
+        has grown from a pioneer settlement into a thriving city that blends small-town charm
+        with modern recreation, shopping, and family life.
+        </p>
+
+    </section>
+
+    <section class="grid-2">
+      <article class="panel">
+        <h2>Demographics</h2>
+        <ul id="demographics" class="bullets"></ul>
+      </article>
+
+      <article class="panel">
+        <h2>Current Events</h2>
+        <ul id="events" class="bullets"></ul>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>See the Sights</h2>
+      <div class="montage">
+        <img loading="lazy" src="images/montage/01.jpg" alt="Canyon overlook">
+        <img loading="lazy" src="images/montage/02.jpg" alt="Historic main street">
+        <img loading="lazy" src="images/montage/03.jpg" alt="Trailhead pines">
+        <img loading="lazy" src="images/montage/04.jpg" alt="Autumn market">
+        <img loading="lazy" src="images/montage/05.jpg" alt="Ridge sunset">
+        <img loading="lazy" src="images/montage/06.jpg" alt="Creek crossing">
+      </div>
+      <p class="muted" id="visits"></p>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

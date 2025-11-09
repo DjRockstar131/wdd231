@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="48" fill="#7c3aed"></rect>
+  <g fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round">
+    <path d="M120 320c40-40 80-60 136-60s96 20 136 60"></path>
+    <path d="M160 360c32-24 64-36 96-36s64 12 96 36"></path>
+  </g>
+  <path d="M256 160c-40 0-72 32-72 72s32 72 72 72 72-32 72-72-32-72-72-72z" fill="#fff" opacity=".9"></path>
+  <text x="256" y="440" fill="#e9d5ff" font-size="80" font-weight="800" text-anchor="middle" font-family="Inter, system-ui">CCR</text>
+</svg>
