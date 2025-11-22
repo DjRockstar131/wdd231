@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You — Farmington Chamber</title>
+  <meta name="description" content="Thank you for submitting your Chamber membership application." />
+  <meta name="author" content="Davin Quist" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Thank You — Farmington Chamber" />
+  <meta property="og:description" content="We have received your membership application." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://DjRockstar131.github.io/wdd231/chamber/thankyou.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/thankyou.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="panel">
+      <h1 class="page-title">Thank You for Joining!</h1>
+      <p class="muted">
+        We’ve received your membership application. A Chamber representative will contact you soon.
+      </p>
+
+      <h2>Submitted Information</h2>
+      <p class="muted">Here is a summary of your required form details:</p>
+
+      <dl class="details-grid">
+        <div>
+          <dt>First Name</dt>
+          <dd id="out-firstName"></dd>
+        </div>
+        <div>
+          <dt>Last Name</dt>
+          <dd id="out-lastName"></dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd id="out-email"></dd>
+        </div>
+        <div>
+          <dt>Mobile Phone</dt>
+          <dd id="out-phone"></dd>
+        </div>
+        <div>
+          <dt>Business / Organization</dt>
+          <dd id="out-organization"></dd>
+        </div>
+        <div>
+          <dt>Submitted At</dt>
+          <dd id="out-timestamp"></dd>
+        </div>
+      </dl>
+
+      <div class="cta-row" style="margin-top: 1.5rem;">
+        <a class="btn" href="directory.html">Browse Member Directory</a>
+        <a class="btn secondary" href="index.html">Return Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

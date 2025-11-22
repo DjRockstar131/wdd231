@@ -15,13 +15,13 @@
   <meta property="og:url" content="https://DjRockstar131.github.io/wdd231/chamber/join.html" />
   <meta property="og:type" content="website" />
 
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/styles.css" />
+
   <script defer src="scripts/main.js"></script>
   <script defer src="scripts/join.js"></script>
 </head>
@@ -31,91 +31,208 @@
   <main class="container">
     <h1 class="page-title">Join the Chamber</h1>
 
-    <section class="grid-3 perks">
-      <article class="panel">
-        <h2>Non-Profit</h2>
-        <ul class="bullets">
-          <li>Directory listing</li>
-          <li>Newsletter publications</li>
-          <li>Training access (limited)</li>
-          <li>Social media shares (1/mo)</li>
-        </ul>
-      </article>
+    <section class="join-layout">
+      <!-- FORM -->
+      <section class="panel">
+        <h2>Membership Application</h2>
+        <form id="join-form" method="get" action="thankyou.html" novalidate>
+          <div class="form-grid">
 
-      <article class="panel">
-        <h2>Silver</h2>
-        <ul class="bullets">
-          <li>Priority directory placement</li>
-          <li>Publications & trainings</li>
-          <li>Quarterly luncheons</li>
-          <li>Event sponsorship opportunities</li>
-        </ul>
-      </article>
+            <!-- First Name -->
+            <label title="Enter your given (first) name.">
+              First Name *
+              <input
+                type="text"
+                name="firstName"
+                required
+                autocomplete="given-name"
+                title="Enter your given (first) name."
+              />
+            </label>
 
-      <article class="panel">
-        <h2>Gold</h2>
-        <ul class="bullets">
-          <li>Top directory placement & spotlight eligibility</li>
-          <li>Full publications, trainings, & luncheons</li>
-          <li>Annual sponsorship packages</li>
-          <li>Advertising credits</li>
-        </ul>
-      </article>
+            <!-- Last Name -->
+            <label title="Enter your family (last) name.">
+              Last Name *
+              <input
+                type="text"
+                name="lastName"
+                required
+                autocomplete="family-name"
+                title="Enter your family (last) name."
+              />
+            </label>
+
+            <!-- Org Title -->
+            <label class="full" title="Your title or role within the organization (at least 7 characters).">
+              Organizational Title
+              <input
+                type="text"
+                name="orgTitle"
+                autocomplete="organization-title"
+                pattern="^[A-Za-z\- ]{7,}$"
+                title="Use only letters, hyphens, and spaces, with at least 7 characters."
+              />
+            </label>
+
+            <!-- Email -->
+            <label title="Enter a valid email address.">
+              Email *
+              <input
+                type="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="you@example.com"
+                title="Enter a valid email address such as you@example.com."
+              />
+            </label>
+
+            <!-- Mobile Phone -->
+            <label title="Enter your mobile phone number.">
+              Mobile Phone *
+              <input
+                type="tel"
+                name="phone"
+                required
+                autocomplete="tel"
+                title="Enter your mobile phone number."
+              />
+            </label>
+
+            <!-- Organization Name -->
+            <label class="full" title="Enter the name of your business or organization.">
+              Business / Organization Name *
+              <input
+                type="text"
+                name="organization"
+                required
+                autocomplete="organization"
+                title="Enter the official name of your business or organization."
+              />
+            </label>
+
+            <!-- Membership Level -->
+            <label class="full" title="Select a membership level.">
+              Membership Level *
+              <select
+                name="membership"
+                required
+                title="Select a membership level that best fits your organization."
+              >
+                <option value="">Select a level…</option>
+                <option value="np">NP Membership (Non-profit, no fee)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </label>
+
+            <!-- Description -->
+            <label class="full" title="Describe your organization and goals for joining.">
+              Business / Organization Description
+              <textarea
+                name="description"
+                rows="4"
+                title="Describe your organization and goals for joining."
+              ></textarea>
+            </label>
+
+            <!-- Hidden timestamp -->
+            <input type="hidden" id="timestamp" name="timestamp" />
+          </div>
+
+          <div class="cta-row">
+            <input class="btn" type="submit" value="Submit Application" />
+            <p class="muted" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+
+      <!-- MEMBERSHIP CARDS -->
+      <section class="plans">
+        <article class="panel plan-card" data-level="np">
+          <h2>NP Membership</h2>
+          <p class="muted">For non-profit organizations — no annual fee.</p>
+          <button type="button" class="link-button" data-modal="np-modal">
+            View Benefits
+          </button>
+        </article>
+
+        <article class="panel plan-card" data-level="bronze">
+          <h2>Bronze Membership</h2>
+          <p class="muted">Great for small, growing businesses.</p>
+          <button type="button" class="link-button" data-modal="bronze-modal">
+            View Benefits
+          </button>
+        </article>
+
+        <article class="panel plan-card" data-level="silver">
+          <h2>Silver Membership</h2>
+          <p class="muted">Extra visibility and event access.</p>
+          <button type="button" class="link-button" data-modal="silver-modal">
+            View Benefits
+          </button>
+        </article>
+
+        <article class="panel plan-card" data-level="gold">
+          <h2>Gold Membership</h2>
+          <p class="muted">Maximum exposure and sponsorship perks.</p>
+          <button type="button" class="link-button" data-modal="gold-modal">
+            View Benefits
+          </button>
+        </article>
+      </section>
     </section>
 
-    <section class="panel">
-      <h2>Application</h2>
-      <form id="join-form" novalidate>
-        <div class="form-grid">
-          <label>
-            Business/Organization Name
-            <input name="org" type="text" required />
-          </label>
+    <!-- MODALS -->
+    <dialog id="np-modal" class="membership-modal">
+      <h2>NP Membership Benefits</h2>
+      <ul class="bullets">
+        <li>No annual membership fee.</li>
+        <li>Directory listing with NP badge.</li>
+        <li>Newsletter publications for campaigns.</li>
+        <li>Access to selected trainings and workshops.</li>
+        <li>Discounted tickets to networking events.</li>
+      </ul>
+      <button type="button" class="btn close-modal">Close</button>
+    </dialog>
 
-          <label>
-            Contact Name
-            <input name="contact" type="text" required />
-          </label>
+    <dialog id="bronze-modal" class="membership-modal">
+      <h2>Bronze Membership Benefits</h2>
+      <ul class="bullets">
+        <li>All NP Membership benefits.</li>
+        <li>Priority directory placement over NP listings.</li>
+        <li>Invites to member-only mixers and luncheons.</li>
+        <li>Quarterly training sessions.</li>
+        <li>Social media highlights twice per year.</li>
+      </ul>
+      <button type="button" class="btn close-modal">Close</button>
+    </dialog>
 
-          <label>
-            Email
-            <input name="email" type="email" required />
-          </label>
+    <dialog id="silver-modal" class="membership-modal">
+      <h2>Silver Membership Benefits</h2>
+      <ul class="bullets">
+        <li>All Bronze Membership benefits.</li>
+        <li>Spotlight eligibility on the home page.</li>
+        <li>Discounts on booth space at Chamber events.</li>
+        <li>Quarterly promotional email mentions.</li>
+        <li>Priority access to Chamber training seats.</li>
+      </ul>
+      <button type="button" class="btn close-modal">Close</button>
+    </dialog>
 
-          <label>
-            Phone
-            <input name="phone" type="tel" required />
-          </label>
+    <dialog id="gold-modal" class="membership-modal">
+      <h2>Gold Membership Benefits</h2>
+      <ul class="bullets">
+        <li>All Silver Membership benefits.</li>
+        <li>Top directory placement with logo.</li>
+        <li>Annual event sponsorship opportunities.</li>
+        <li>Advertising credits in Chamber publications.</li>
+        <li>Custom co-branded campaigns with the Chamber.</li>
+      </ul>
+      <button type="button" class="btn close-modal">Close</button>
+    </dialog>
 
-          <label>
-            Website
-            <input name="website" type="url" placeholder="https://…" />
-          </label>
-
-          <label>
-            Address
-            <input name="address" type="text" required />
-          </label>
-
-          <fieldset class="full">
-            <legend>Membership Level</legend>
-            <label><input type="radio" name="level" value="nonprofit" required /> Non-Profit</label>
-            <label><input type="radio" name="level" value="silver" /> Silver</label>
-            <label><input type="radio" name="level" value="gold" /> Gold</label>
-          </fieldset>
-
-          <label class="full">
-            Notes (optional)
-            <textarea name="notes" rows="4" placeholder="Tell us about your goals…"></textarea>
-          </label>
-        </div>
-
-        <div class="cta-row">
-          <button class="btn" type="submit">Submit Application</button>
-          <p class="muted" id="form-status" role="status" aria-live="polite"></p>
-        </div>
-      </form>
-    </section>
   </main>
 
   <footer id="site-footer"></footer>

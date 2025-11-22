@@ -313,3 +313,89 @@ fieldset {
   .home-grid, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
 }
+/* -------- JOIN PAGE LAYOUT -------- */
+.join-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-top: var(--space-4);
+}
+
+/* Membership cards section */
+.plans {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Initial load animation for cards */
+.plan-card {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: planFadeIn .7s ease-out forwards;
+}
+
+.plan-card:nth-child(2) { animation-delay: .1s; }
+.plan-card:nth-child(3) { animation-delay: .2s; }
+.plan-card:nth-child(4) { animation-delay: .3s; }
+
+@keyframes planFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button-styled links for modal triggers */
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--brand);
+  font-size: var(--fs-200);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Modals */
+.membership-modal {
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.12);
+  background: var(--card);
+  color: var(--text);
+  padding: var(--space-5);
+  max-width: 480px;
+}
+
+.membership-modal::backdrop {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+/* Details list on thank you page */
+.details-grid {
+  display: grid;
+  gap: .75rem;
+  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.details-grid dt {
+  font-weight: 600;
+  margin-bottom: .15rem;
+}
+
+.details-grid dd {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Responsive: stack plans below form on small screens */
+@media (max-width: 800px) {
+  .join-layout {
+    grid-template-columns: 1fr;
+  }
+}
