@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site Plan – D&D Bestiary</title>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #050816;           /* main background */
+      --panel: #111827;        /* panel background */
+      --text: #e5e7eb;         /* body text */
+      --muted: #9ca3af;        /* muted text */
+      --accent: #f97316;       /* fiery orange accent */
+      --accent-2: #22c55e;     /* emerald secondary accent */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #111827 0, #050816 55%, #020617 100%);
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(960px, 94vw);
+      margin: 0 auto;
+      padding: 1.5rem 0 3rem;
+    }
+
+    header {
+      padding: 1.5rem 0 0.75rem;
+    }
+
+    h1, h2, h3 {
+      font-family: "Cinzel", "Times New Roman", serif;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 3vw, 2.4rem);
+      margin: 0 0 0.25rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+      color: var(--accent-2);
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .panel {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 14px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1rem;
+      border: 1px solid rgba(249, 115, 22, 0.35);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    p {
+      margin: 0.25rem 0 0.75rem;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin: 0.25rem 0 0.75rem 1.1rem;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    code {
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.9rem;
+      background: rgba(15, 23, 42, 0.9);
+      padding: 0.05rem 0.25rem;
+      border-radius: 4px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .color-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .swatch {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      font-size: 0.9rem;
+    }
+
+    .swatch-chip {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 23, 42, 0.9);
+    }
+
+    .swatch-chip.bg {
+      background: var(--bg);
+    }
+
+    .swatch-chip.accent {
+      background: var(--accent);
+    }
+
+    .swatch-chip.accent2 {
+      background: var(--accent-2);
+    }
+
+    .font-sample {
+      margin-bottom: 0.75rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      font-size: 0.95rem;
+    }
+
+    .font-sample-heading {
+      font-family: "Cinzel", "Times New Roman", serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.35rem;
+      color: var(--accent);
+    }
+
+    .font-sample-body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .wireframes {
+      display: grid;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .wireframe-box {
+      border-radius: 10px;
+      padding: 0.9rem 1rem;
+      border: 1px dashed rgba(148, 163, 184, 0.9);
+      background: rgba(15, 23, 42, 0.7);
+      font-size: 0.9rem;
+    }
+
+    .wf-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: var(--accent-2);
+    }
+
+    .wf-grid {
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      white-space: pre;
+      font-size: 0.78rem;
+      line-height: 1.3;
+      margin-top: 0.35rem;
+      color: #e5e7eb;
+    }
+
+    @media (min-width: 900px) {
+      .wireframes {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Site Plan: Arcane Bestiary</h1>
+      <p class="tagline">A Dungeons &amp; Dragons inspired creature compendium.</p>
+      <p class="meta">Subject: A Dungeons and Dragons Bestiary</p>
+    </header>
+
+    <!-- Site Name -->
+    <section class="panel">
+      <h2>Site Name</h2>
+      <p><strong>Arcane Bestiary</strong></p>
+      <p>
+        This name was chosen because it clearly communicates that the site is a magical, fantasy-themed
+        collection of creatures. The word <em>Arcane</em> reflects spellcasting and mystery in Dungeons &amp;
+        Dragons, while <em>Bestiary</em> is a classic term for a catalog of monsters and beasts.
+      </p>
+      <p class="meta">
+        Example domain (for class purposes): <code>arcanebestiary.net</code>
+      </p>
+    </section>
+
+    <!-- Site Purpose -->
+    <section class="panel">
+      <h2>Site Purpose</h2>
+      <p>
+        The website will present a bestiary of fantasy creatures in Dungeons &amp; Dragons. The site will include:
+      </p>
+      <ul>
+        <li>
+          A <strong>home page</strong> that introduces the bestiary, explains its theme and how it can
+          support D&amp;D players and Dungeon Masters.
+        </li>
+        <li>
+          A <strong>full creature index</strong> that displays at least fifteen monsters, dynamically
+          generated from a JSON data file. Visitors will be able to browse, filter, and view key stats and lore.
+        </li>
+        <li>
+          An <strong>informational page</strong> about the world and how to use the site, including an
+          explanation of monster attributes (CR, type, environment) and how to plug the creatures into
+          encounters.
+        </li>
+      </ul>
+      <p>
+        Overall, the purpose is to give players a quickly browsable, flavorful resource of homebrew-style
+        monsters that can be dropped into campaigns with minimal prep.
+      </p>
+    </section>
+
+    <!-- Scenarios -->
+    <section class="panel">
+      <h2>Scenarios</h2>
+      <p>The following example questions represent common scenarios for the target audience:</p>
+      <ul>
+        <li>
+          <strong>“I’m running a session in a haunted forest. Which creatures fit that environment and CR
+          range?”</strong><br />
+          The bestiary index will allow visitors to filter monsters by environment (such as forest, swamp,
+          dungeon) and by challenge rating so they can quickly find appropriate options.
+        </li>
+        <li>
+          <strong>“I need a unique boss monster with lore that ties into my campaign’s story.”</strong><br />
+          Each creature entry will include a short lore section plus hooks or abilities that make it easy to
+          connect the monster to existing plots, factions, or locations.
+        </li>
+        <li>
+          <strong>“What do all these stats mean and how do I use them at the table?”</strong><br />
+          The informational page will include a gentle explanation of D&amp;D terms like CR, type, and
+          environments, along with tips for scaling and reskinning creatures.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Color Scheme -->
+    <section class="panel">
+      <h2>Color Scheme</h2>
+      <p>
+        The color scheme is inspired by dimly lit dungeons and spellfire. At least two main colors will be used:
+      </p>
+      <ul>
+        <li>
+          <strong>Dark Arcane Night</strong> – <code>#050816</code><br />
+          Used for the main background of the site and panels, creating a high-contrast, moody base that
+          feels like a starless sky over an adventuring party.
+        </li>
+        <li>
+          <strong>Fiery Glyph Orange</strong> – <code>#f97316</code><br />
+          Used for key accents: primary buttons, important headings, and hover states. This gives the feel of
+          burning runes or torchlight illuminating a monster’s lair.
+        </li>
+        <li>
+          <strong>Emerald Sigil Green</strong> – <code>#22c55e</code><br />
+          Used as a secondary accent for section labels, small highlights, and tag badges (for example,
+          “Forest” or “Undead”). It calls to mind magical wards and healing spells.
+        </li>
+      </ul>
+
+      <div class="color-row">
+        <div class="swatch">
+          <span class="swatch-chip bg"></span>
+          <span>#050816 – background / panels</span>
+        </div>
+        <div class="swatch">
+          <span class="swatch-chip accent"></span>
+          <span>#f97316 – primary accents</span>
+        </div>
+        <div class="swatch">
+          <span class="swatch-chip accent2"></span>
+          <span>#22c55e – secondary accents</span>
+        </div>
+      </div>
+
+      <p class="meta">
+        This site-plan document already uses these colors for the background, panels, headings, and accents
+        to preview the intended look and feel.
+      </p>
+    </section>
+
+    <!-- Typography -->
+    <section class="panel">
+      <h2>Typography</h2>
+      <p>The project will use two main fonts:</p>
+
+      <h3>Primary Heading Font</h3>
+      <div class="font-sample">
+        <div class="font-sample-heading">
+          Cinzel – Headings, Logo, and Decorative Titles
+        </div>
+        <p>
+          <strong>Usage:</strong> Applied to the site name in the header, main page titles (H1), section
+          headings (H2 / H3), and any fantasy-styled labels such as “Bestiary Index” or “Encounter Seeds”.
+        </p>
+      </div>
+
+      <h3>Body Font</h3>
+      <div class="font-sample font-sample-body">
+        <strong>Inter – Body Text, UI, and Descriptions</strong>
+        <p>
+          <strong>Usage:</strong> Applied to general body copy, navigation links, card descriptions, and
+          form labels. Inter is chosen for readability on both mobile and desktop while still fitting a
+          modern fantasy interface.
+        </p>
+      </div>
+
+      <p class="meta">
+        Additional stylistic emphasis (for example, creature names in small caps or italicized lore
+        snippets) will be handled using these same fonts with CSS variations rather than extra typefaces.
+      </p>
+    </section>
+
+    <!-- Wireframes -->
+    <section class="panel">
+      <h2>Home Page Wireframes</h2>
+      <p>
+        The following simple wireframes show the planned layout for the home page at mobile size and at a
+        larger (desktop/tablet) viewport. Boxes represent sections, not final design.
+      </p>
+
+      <div class="wireframes">
+        <!-- Mobile Wireframe -->
+        <div class="wireframe-box">
+          <div class="wf-title">Mobile View (Narrow Screen)</div>
+          <p>Single-column layout with stacked sections.</p>
+          <div class="wf-grid">
++------------------------------+
+|  LOGO / BRAND               |
+|  "Arcane Bestiary"          |
++------------------------------+
+|  NAV (menu button)          |
++------------------------------+
+|  HERO                       |
+|  - Title & tagline          |
+|  - Two buttons (Browse,     |
+|    Roll Encounter)          |
++------------------------------+
+|  "What is this?" PANEL      |
+|  - Short description        |
++------------------------------+
+|  FEATURED MONSTER PANEL     |
+|  - Small card with image    |
+|    + name + short lore      |
++------------------------------+
+|  FOOTER                     |
++------------------------------+
+          </div>
+        </div>
+
+        <!-- Desktop Wireframe -->
+        <div class="wireframe-box">
+          <div class="wf-title">Desktop / Tablet View (Wider Screen)</div>
+          <p>Two-column hero emphasis with supporting panels below.</p>
+          <div class="wf-grid">
++--------------------------------------------------------+
+| LOGO / BRAND            | NAV LINKS (Home, Bestiary,   |
+| "Arcane Bestiary"       | Tools, About)               |
++--------------------------------------------------------+
+|                HERO SECTION                            |
+|  [ Title + tagline + buttons ]  [ Feature art /       |
+|                                  illustration block ] |
++--------------------------------------------------------+
+|  "What is this?" PANEL (full width)                   |
++--------------------------------------------------------+
+|  FEATURED MONSTER + maybe quick stats, laid out as a  |
+|  card with image on left and text on right            |
++--------------------------------------------------------+
+| FOOTER with credits                                   |
++--------------------------------------------------------+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
