@@ -1,0 +1,304 @@
+{
+  "creatures": [
+    {
+      "id": "emberwolf",
+      "name": "Emberwolf",
+      "type": "Beast",
+      "cr": 2,
+      "size": ["Medium"],
+      "alignment": "Neutral",
+      "environment": ["Forest", "Mountain"],
+      "tags": ["fire", "pack"],
+      "hit_points": 27,
+      "ac": 13,
+      "speed": "40 ft.",
+      "image": "images/creatures/emberwolf.webp",
+      "lore": "Emberwolves are born from packs that survive wildfires or magical conflagrations. Their fur smolders with a constant inner glow, and their pawprints leave faint scorch marks on the ground. Villagers sometimes see them as omens that the land is healing, while others fear them as living reminders of what was lost.",
+      "abilities": [
+        "Heated Bite: The Emberwolf's jaws sear as well as tear, leaving wounds that continue to smolder.",
+        "Blazing Pack: When several Emberwolves howl together, nearby brush can suddenly ignite.",
+        "Ash Runner: The wolf can run through smoke and ash without penalty."
+      ]
+    },
+    {
+      "id": "gravebound_knight",
+      "name": "Gravebound Knight",
+      "type": "Undead",
+      "cr": 5,
+      "size": "Medium",
+      "alignment": "Lawful Evil",
+      "environment": ["Swamp", "Urban"],
+      "tags": ["undead", "oath"],
+      "hit_points": 68,
+      "ac": 18,
+      "speed": "30 ft.",
+      "image": "images/creatures/gravebound_knight.webp",
+      "lore": "Gravebound Knights rise when a sworn defender perishes with a sacred duty unfinished. Their armor is mottled with rust and moss, yet they march with soldierly precision. They rarely speak, except to recite fragments of vows centuries old.",
+      "abilities": [
+        "Oath of Vigil: Gains uncanny resilience while defending a sworn location.",
+        "Haunting Challenge: Compels foes to duel or suffer spectral chains.",
+        "Echo of Steel: Their blade rings stir memories of ancient wars."
+      ]
+    },
+    {
+      "id": "skyrazor_drake",
+      "name": "Skyrazor Drake",
+      "type": "Dragon",
+      "cr": 6,
+      "size": ["Gargantuan"],
+      "alignment": "Chaotic Neutral",
+      "environment": ["Mountain"],
+      "tags": ["flying", "lightning"],
+      "hit_points": 95,
+      "ac": 17,
+      "speed": "30 ft., fly 80 ft.",
+      "image": "images/creatures/skyrazor_drake.webp",
+      "lore": "Skyrazor Drakes carve lairs into lightning-blasted peaks. They prize the thrill of the hunt more than treasure and often dive through thunderheads to ambush prey below.",
+      "abilities": [
+        "Lightning Scream: A cry that crackles with static energy.",
+        "Storm Glide: Can vanish into clouds and reappear instantly.",
+        "Thunder Pounce: Diving impacts send out concussive shockwaves."
+      ]
+    },
+    {
+      "id": "bog_lurker",
+      "name": "Bog Lurker",
+      "type": "Aberration",
+      "cr": 4,
+      "size": ["Huge"],
+      "alignment": "Neutral Evil",
+      "environment": ["Swamp"],
+      "tags": ["ambush", "acid"],
+      "hit_points": 84,
+      "ac": 14,
+      "speed": "20 ft., swim 30 ft.",
+      "image": "images/creatures/bog_lurker.webp",
+      "lore": "Bog Lurkers resemble heaps of rotting logs until they move. Their pale lantern-like eyes watch travelers from murky waters, and legends claim they were spawned by a corrupted druidic ritual.",
+      "abilities": [
+        "Swamp Ambush: Perfectly camouflaged until striking.",
+        "Dissolving Slime: Corrosive mucus eats through armor.",
+        "Grasping Mire: Causes mud to seize and pull victims under."
+      ]
+    },
+    {
+      "id": "crystalhorn_stag",
+      "name": "Crystalhorn Stag",
+      "type": "Fey",
+      "cr": 3,
+      "size": ["Large"],
+      "alignment": "Chaotic Good",
+      "environment": ["Forest"],
+      "tags": ["healing", "light"],
+      "hit_points": 40,
+      "ac": 14,
+      "speed": "50 ft.",
+      "image": "images/creatures/crystalhorn_stag.webp",
+      "lore": "Crystalhorn Stags appear where the veil to the Feywild thins. Their antlers glow softly, leading lost travelers to safety before the creature vanishes into trees.",
+      "abilities": [
+        "Moonlit Antlers: Reveals hidden trails and illusions.",
+        "Fey Refuge: Creates a peaceful sanctuary for brief rest.",
+        "Shattering Charge: Sends shards of light across enemies."
+      ]
+    },
+    {
+      "id": "emberclaw_ogre",
+      "name": "Emberclaw Ogre",
+      "type": "Giant",
+      "cr": 4,
+      "size": ["Huge"],
+      "alignment": "Chaotic Evil",
+      "environment": ["Mountain", "Hill"],
+      "tags": ["fire", "brute"],
+      "hit_points": 59,
+      "ac": 12,
+      "speed": "40 ft.",
+      "image": "images/creatures/emberclaw_ogre.webp",
+      "lore": "Emberclaw Ogres scorch runes into their own skin in rituals of strength. When enraged, the runes burn bright, and their blows become devastating.",
+      "abilities": [
+        "Burning Brand: Ignites its weapon for fiery strikes.",
+        "Runes of Fury: Runes activate when wounded.",
+        "Fire-Scarred Hide: Resistant to flame."
+      ]
+    },
+    {
+      "id": "lantern_wraith",
+      "name": "Lantern Wraith",
+      "type": "Undead",
+      "cr": 2,
+      "size": ["Medium"],
+      "alignment": "Neutral Evil",
+      "environment": ["Urban", "Swamp"],
+      "tags": ["spirit", "fear"],
+      "hit_points": 31,
+      "ac": 13,
+      "speed": "0 ft., fly 40 ft.",
+      "image": "images/creatures/lantern_wraith.webp",
+      "lore": "Born from watchmen who died alone at their posts, Lantern Wraiths lure victims with a pale glow that seems safe—until it leads them astray.",
+      "abilities": [
+        "Guiding Gloom: Dims other light sources.",
+        "Soul-Flame: Lantern flares with stolen life.",
+        "Memory Echo: Shows victims visions of regret."
+      ]
+    },
+    {
+      "id": "runeshell_tortoise",
+      "name": "Runeshell Tortoise",
+      "type": "Beast",
+      "cr": 3,
+      "size": ["Large"],
+      "alignment": "Neutral",
+      "environment": ["Coastal", "Grassland"],
+      "tags": ["defense", "ward"],
+      "hit_points": 51,
+      "ac": 19,
+      "speed": "20 ft., swim 20 ft.",
+      "image": "images/creatures/runeshell_tortoise.webp",
+      "lore": "Runeshell Tortoises bask on rocky shores and windswept plains. Many believe their shifting runes foretell storms or omens.",
+      "abilities": [
+        "Protective Inscription: Provides magical cover.",
+        "Tidal Brace: Cannot be moved when braced.",
+        "Oracle Shell: Sleeping near it grants visions."
+      ]
+    },
+    {
+      "id": "veil_stalker",
+      "name": "Veil Stalker",
+      "type": "Fiend",
+      "cr": 7,
+      "size": ["Medium"],
+      "alignment": "Lawful Evil",
+      "environment": ["Underdark", "Urban"],
+      "tags": ["shadow", "assassin"],
+      "hit_points": 102,
+      "ac": 18,
+      "speed": "40 ft.",
+      "image": "images/creatures/veil_stalker.webp",
+      "lore": "Veil Stalkers hunt targets across cities and the lightless Underdark. They obey written contracts carved into obsidian tablets.",
+      "abilities": [
+        "Shadow Step: Teleports between shadows.",
+        "Marked by Ink: Tracks branded targets anywhere.",
+        "Debt Collector: Deals extra damage to oathbreakers."
+      ]
+    },
+    {
+      "id": "stormbound_golem",
+      "name": "Stormbound Golem",
+      "type": "Construct",
+      "cr": 8,
+      "size": ["Large"],
+      "alignment": "Unaligned",
+      "environment": ["Urban", "Mountain"],
+      "tags": ["construct", "lightning"],
+      "hit_points": 126,
+      "ac": 19,
+      "speed": "30 ft.",
+      "image": "images/creatures/stormbound_golem.webp",
+      "lore": "Stormbound Golems guard ancient sky-temples and fortified cities. Their bodies hum with stored lightning, illuminating rune-inlaid stone.",
+      "abilities": [
+        "Arc Conduit: Absorbs lightning to empower attacks.",
+        "Thunderstep: Steps create bursts of thunder.",
+        "Guardian Protocol: Unyielding within its warded zone."
+      ]
+    },
+    {
+      "id": "frostfen_hag",
+      "name": "Frostfen Hag",
+      "type": "Fey",
+      "cr": 5,
+      "size": ["Medium"],
+      "alignment": "Chaotic Evil",
+      "environment": ["Swamp", "Arctic"],
+      "tags": ["cold", "coven"],
+      "hit_points": 82,
+      "ac": 15,
+      "speed": "30 ft., swim 20 ft.",
+      "image": "images/creatures/frostfen_hag.webp",
+      "lore": "Frostfen Hags dwell where bog water freezes. They bargain with travelers for warmth or safety—at terrible cost.",
+      "abilities": [
+        "Icy Mire: Freezes swamp surfaces.",
+        "Whispers in the Fog: Projects voice through mist.",
+        "Coven Caller: Magic strengthens when with other hags."
+      ]
+    },
+    {
+      "id": "abyssal_hound",
+      "name": "Abyssal Hound",
+      "type": "Fiend",
+      "cr": 3,
+      "size": ["Medium"],
+      "alignment": "Chaotic Evil",
+      "environment": ["Urban", "Desert"],
+      "tags": ["tracker", "fire"],
+      "hit_points": 39,
+      "ac": 14,
+      "speed": "50 ft.",
+      "image": "images/creatures/abyssal_hound.webp",
+      "lore": "Forged in infernal kennels, Abyssal Hounds track prey across scorching sands or crowded city streets.",
+      "abilities": [
+        "Infernal Scent: Tracks creatures by emotional residue.",
+        "Flame-Touched Fur: Sparks fly when angered.",
+        "Pack Terror: Unnerving howls weaken resolve."
+      ]
+    },
+    {
+      "id": "aurora_wyrmling",
+      "name": "Aurora Wyrmling",
+      "type": "Dragon",
+      "cr": 3,
+      "size": ["Small"],
+      "alignment": "Neutral Good",
+      "environment": ["Arctic", "Mountain"],
+      "tags": ["cold", "light"],
+      "hit_points": 45,
+      "ac": 15,
+      "speed": "30 ft., fly 60 ft.",
+      "image": "images/creatures/aurora_wyrmling.webp",
+      "lore": "Aurora Wyrmlings soar through frozen skies, leaving trails of multicolored light. Many northern tribes consider them sacred.",
+      "abilities": [
+        "Auroral Breath: Cone of glittering frost.",
+        "Guiding Gleam: Sends beams of colored light.",
+        "Frozen Perch: Never slips on ice."
+      ]
+    },
+    {
+      "id": "mossback_treant",
+      "name": "Mossback Treant",
+      "type": "Plant",
+      "cr": 6,
+      "size": ["Huge"],
+      "alignment": "Neutral",
+      "environment": ["Forest"],
+      "tags": ["guardian", "nature"],
+      "hit_points": 138,
+      "ac": 16,
+      "speed": "30 ft.",
+      "image": "images/creatures/mossback_treant.webp",
+      "lore": "Mossback Treants rarely move for decades, allowing entire ecosystems to form atop them. They awaken only when the forest is threatened.",
+      "abilities": [
+        "Rooted Resilience: Anchors itself to resist force.",
+        "Verdant Call: Summons wildlife to aid.",
+        "Regrowth: Repairs its wooden body when still."
+      ]
+    },
+    {
+      "id": "glasswing_harpy",
+      "name": "Glasswing Harpy",
+      "type": "Monstrosity",
+      "cr": 4,
+      "size": ["Medium"],
+      "alignment": "Chaotic Neutral",
+      "environment": ["Coastal", "Mountain"],
+      "tags": ["flying", "song"],
+      "hit_points": 52,
+      "ac": 14,
+      "speed": "20 ft., fly 60 ft.",
+      "image": "images/creatures/glasswing_harpy.webp",
+      "lore": "Glasswing Harpies perch along sea cliffs and high peaks. Their songs reflect the wind and light around them, forming hypnotic illusions.",
+      "abilities": [
+        "Prismatic Wings: Colors dazzle onlookers.",
+        "Luring Chorus: Draws travelers off safe paths.",
+        "Shattering Scream: Fractures brittle materials."
+      ]
+    }
+  ]
+}

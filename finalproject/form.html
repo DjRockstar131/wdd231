@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arcane Bestiary — Submit a Creature</title>
+  <meta name="description" content="Share a custom creature idea with the Arcane Bestiary archivist." />
+  <meta name="author" content="Davin Quist" />
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arcane Bestiary — Submit a Creature" />
+  <meta property="og:description" content="Fill out this form to submit a homebrew monster concept." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://DjRockstar131.github.io/wdd231/final/form.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <script type="module" src="scripts/form.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1 class="page-title">Submit a Creature</h1>
+
+    <section class="panel">
+      <p class="muted">
+        This form is for practice only, but imagine you are sending a homebrew monster to the Arcane Bestiary
+        archivist. The information you submit will be shown back to you on the confirmation page.
+      </p>
+
+      <form id="creature-form" method="get" action="thankyou.html" class="form-grid" novalidate>
+        <label>
+          Your Name *
+          <input type="text" name="name" required autocomplete="name" />
+        </label>
+
+        <label>
+          Email *
+          <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+        </label>
+
+        <label>
+          Creature Name *
+          <input type="text" name="creatureName" required />
+        </label>
+
+        <label>
+          Topic
+          <select name="topic">
+            <option value="idea">New creature idea</option>
+            <option value="bug">Issue or typo</option>
+            <option value="rules">Rules question</option>
+          </select>
+        </label>
+
+        <label class="full">
+          Description or Message *
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp" />
+
+        <div class="full cta-row">
+          <button class="btn" type="submit">Send to the Archivist</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arcane Bestiary — Creatures</title>
+  <meta name="description" content="Browse a dynamic index of monsters with filters for type, environment, and challenge rating." />
+  <meta name="author" content="Davin Quist" />
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arcane Bestiary — Creatures" />
+  <meta property="og:description" content="Filter and browse homebrew-style monsters for your D&D games." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://DjRockstar131.github.io/wdd231/final/bestiary.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <script type="module" src="scripts/bestiary.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <h1 class="page-title">Bestiary</h1>
+
+    <section class="panel filters">
+      <h2>Filters</h2>
+      <form id="filters" class="filter-grid">
+        <label>
+          Type
+          <select name="type">
+            <option value="">Any</option>
+            <option value="Beast">Beast</option>
+            <option value="Undead">Undead</option>
+            <option value="Dragon">Dragon</option>
+            <option value="Aberration">Aberration</option>
+            <option value="Fey">Fey</option>
+            <option value="Fiend">Fiend</option>
+            <option value="Ooze">Ooze</option>
+            <option value="Plant">Plant</option>
+            <option value="Monstrosity">Monstrosity</option>
+            <option value="Humanoid">Humanoid</option>
+            <option value="Giant">Giant</option>
+            <option value="Construct">Construct</option>
+            <option value="Celestial">Celestial</option>
+            <option value="Elemental">Elemental</option>
+          </select>
+        </label>
+
+        <label>
+          Environment
+          <select name="env">
+            <option value="">Any</option>
+            <option value="Forest">Forest</option>
+            <option value="Swamp">Swamp</option>
+            <option value="Urban">Urban</option>
+            <option value="Mountain">Mountain</option>
+            <option value="Coastal">Coastal</option>
+            <option value="Underdark">Underdark</option>
+            <option value="Underwater">Underwater</option>
+            <option value="Hill">Hill</option>
+            <option value="Grassland">Grassland</option>
+            <option value="Desert">Desert</option>
+            <option value="Arctic">Arctic</option>
+          </select>
+        </label>
+        
+        <label>
+          Size
+          <select name="size">
+            <option value="">Any</option>
+            <option value="Tiny">Tiny</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Huge">Huge</option>
+            <option value="Gargantuan">Gargantuan</option>
+          </select>
+        </label>
+        
+        <label>
+          Max CR
+          <input type="number" name="maxCr" min="0" step="0.5" placeholder="Any" />
+        </label>
+
+        <label class="checkbox-inline">
+          <input type="checkbox" name="favoritesOnly" />
+          Favorites only
+        </label>
+      </form>
+    </section>
+
+    <section id="creature-list" class="cards grid" aria-live="polite"></section>
+
+    <dialog id="creature-modal" class="creature-modal">
+      <article id="modal-content"></article>
+      <button type="button" class="btn close-modal">Close</button>
+    </dialog>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

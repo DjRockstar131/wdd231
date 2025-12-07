@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arcane Bestiary — Thank You</title>
+  <meta name="description" content="Confirmation page that displays the information you submitted to the Arcane Bestiary." />
+  <meta name="author" content="Davin Quist" />
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arcane Bestiary — Thank You" />
+  <meta property="og:description" content="Thanks for sharing a creature idea with the Arcane Bestiary." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://DjRockstar131.github.io/wdd231/final/thankyou.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <script type="module" src="scripts/thankyou.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="panel">
+      <h1 class="page-title">Thank You!</h1>
+      <p class="muted">
+        Your submission has been received. Below is a summary of the information you entered.
+      </p>
+
+      <dl class="details-grid">
+        <div>
+          <dt>Your Name</dt>
+          <dd id="out-name"></dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd id="out-email"></dd>
+        </div>
+        <div>
+          <dt>Creature Name</dt>
+          <dd id="out-creatureName"></dd>
+        </div>
+        <div>
+          <dt>Topic</dt>
+          <dd id="out-topic"></dd>
+        </div>
+        <div class="full-row">
+          <dt>Message</dt>
+          <dd id="out-message"></dd>
+        </div>
+        <div>
+          <dt>Submitted At</dt>
+          <dd id="out-timestamp"></dd>
+        </div>
+      </dl>
+
+      <div class="cta-row" style="margin-top: 1.5rem;">
+        <a class="btn" href="bestiary.html">Back to Bestiary</a>
+        <a class="btn secondary" href="index.html">Return Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

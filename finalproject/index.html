@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arcane Bestiary — Home</title>
+  <meta name="description" content="A Dungeons & Dragons inspired bestiary of homebrew creatures, lore, and encounter ideas." />
+  <meta name="author" content="Davin Quist" />
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arcane Bestiary — Home" />
+  <meta property="og:description" content="Browse monsters, discover lore, and prepare encounters for your next D&D session." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://DjRockstar131.github.io/wdd231/final/index.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+  <script type="module" src="scripts/home.js"></script>
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Arcane Bestiary</h1>
+        <p>Summon detailed monsters, lore, and encounter ideas for your next D&amp;D adventure.</p>
+        <div class="cta-row">
+          <a class="btn" href="bestiary.html">Browse Creatures</a>
+          <a class="btn secondary" href="world.html">Explore the World</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>What is this?</h2>
+      <p>
+        Arcane Bestiary is a fan-made collection of creatures inspired by Dungeons &amp; Dragons. Each monster
+        is presented with quick stats, lore, and story hooks so you can drop it into a campaign with minimal prep.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Featured Monster</h2>
+      <p class="muted">A randomly chosen creature from the bestiary.</p>
+      <div id="featured-monster" class="cards"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>
