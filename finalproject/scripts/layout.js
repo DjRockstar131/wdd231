@@ -35,7 +35,6 @@ export function initLayout() {
 
       <div class="footer-col">
         &copy; <span id="year"></span> Davin Quist — WDD 231 ·
-        <a href="attributions.html">Attributions</a>
         <br />
         <a id="demo-video" href="#" target="_blank" rel="noopener">
           🎥 Project Demo Video
