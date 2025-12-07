@@ -15,10 +15,10 @@ export function initLayout() {
         </button>
         <nav id="primary-nav" aria-label="Primary navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bestiary.html">Bestiary</a></li>
-            <li><a href="world.html">World</a></li>
-            <li><a href="form.html">Form</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./bestiary.html">Bestiary</a></li>
+            <li><a href="./world.html">World</a></li>
+            <li><a href="./form.html">Form</a></li>
           </ul>
         </nav>
       </div>
